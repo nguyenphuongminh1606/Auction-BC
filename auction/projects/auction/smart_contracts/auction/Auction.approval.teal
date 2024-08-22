@@ -1,0 +1,54 @@
+#pragma version 10
+
+smart_contracts.auction.contract.Auction.approval_program:
+    txn ApplicationID
+    bnz main_entrypoint@2
+    callsub __init__
+
+main_entrypoint@2:
+    // smart_contracts/auction/contract.py:4
+    // class Auction(ARC4Contract):
+    txn NumAppArgs
+    !
+    assert // reject transaction
+    txn OnCompletion
+    !
+    assert // reject transaction
+    txn ApplicationID
+    !
+    assert // is creating
+    int 1
+    return
+
+
+// smart_contracts.auction.contract.Auction.__init__() -> void:
+__init__:
+    // smart_contracts/auction/contract.py:5
+    // def __init__(self) -> None:
+    proto 0 0
+    // smart_contracts/auction/contract.py:6
+    // self.auction_start = UInt64(0)
+    byte "auction_start"
+    int 0
+    app_global_put
+    // smart_contracts/auction/contract.py:7
+    // self.auction_end = UInt64(0)
+    byte "auction_end"
+    int 0
+    app_global_put
+    // smart_contracts/auction/contract.py:8
+    // self.asa_amount = UInt64(0)
+    byte "asa_amount"
+    int 0
+    app_global_put
+    // smart_contracts/auction/contract.py:9
+    // self.asa = Asset()  # ASA Algorand standard assets
+    byte "asa"
+    int 0
+    app_global_put
+    // smart_contracts/auction/contract.py:10
+    // self.previous_bidder = Account()
+    byte "previous_bidder"
+    global ZeroAddress
+    app_global_put
+    retsub

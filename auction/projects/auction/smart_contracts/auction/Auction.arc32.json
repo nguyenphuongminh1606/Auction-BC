@@ -1,0 +1,82 @@
+{
+  "hints": {
+    "hello(string)string": {
+      "call_config": {
+        "no_op": "CALL"
+      }
+    }
+  },
+  "source": {
+    "approval": "I3ByYWdtYSB2ZXJzaW9uIDEwCgpzbWFydF9jb250cmFjdHMuYXVjdGlvbi5jb250cmFjdC5BdWN0aW9uLmFwcHJvdmFsX3Byb2dyYW06CiAgICAvLyBwcm9qZWN0cy9hdWN0aW9uL3NtYXJ0X2NvbnRyYWN0cy9hdWN0aW9uL2NvbnRyYWN0LnB5OjUKICAgIC8vIGNsYXNzIEF1Y3Rpb24oQVJDNENvbnRyYWN0KToKICAgIHR4biBOdW1BcHBBcmdzCiAgICBieiBtYWluX2JhcmVfcm91dGluZ0A1CiAgICBtZXRob2QgImhlbGxvKHN0cmluZylzdHJpbmciCiAgICB0eG5hIEFwcGxpY2F0aW9uQXJncyAwCiAgICBtYXRjaCBtYWluX2hlbGxvX3JvdXRlQDIKICAgIGVyciAvLyByZWplY3QgdHJhbnNhY3Rpb24KCm1haW5faGVsbG9fcm91dGVAMjoKICAgIC8vIHByb2plY3RzL2F1Y3Rpb24vc21hcnRfY29udHJhY3RzL2F1Y3Rpb24vY29udHJhY3QucHk6NgogICAgLy8gQGFiaW1ldGhvZCgpCiAgICB0eG4gT25Db21wbGV0aW9uCiAgICAhCiAgICBhc3NlcnQgLy8gT25Db21wbGV0aW9uIGlzIE5vT3AKICAgIHR4biBBcHBsaWNhdGlvbklECiAgICBhc3NlcnQgLy8gaXMgbm90IGNyZWF0aW5nCiAgICAvLyBwcm9qZWN0cy9hdWN0aW9uL3NtYXJ0X2NvbnRyYWN0cy9hdWN0aW9uL2NvbnRyYWN0LnB5OjUKICAgIC8vIGNsYXNzIEF1Y3Rpb24oQVJDNENvbnRyYWN0KToKICAgIHR4bmEgQXBwbGljYXRpb25BcmdzIDEKICAgIGV4dHJhY3QgMiAwCiAgICAvLyBwcm9qZWN0cy9hdWN0aW9uL3NtYXJ0X2NvbnRyYWN0cy9hdWN0aW9uL2NvbnRyYWN0LnB5OjYKICAgIC8vIEBhYmltZXRob2QoKQogICAgY2FsbHN1YiBoZWxsbwogICAgZHVwCiAgICBsZW4KICAgIGl0b2IKICAgIGV4dHJhY3QgNiAyCiAgICBzd2FwCiAgICBjb25jYXQKICAgIGJ5dGUgMHgxNTFmN2M3NQogICAgc3dhcAogICAgY29uY2F0CiAgICBsb2cKICAgIGludCAxCiAgICByZXR1cm4KCm1haW5fYmFyZV9yb3V0aW5nQDU6CiAgICAvLyBwcm9qZWN0cy9hdWN0aW9uL3NtYXJ0X2NvbnRyYWN0cy9hdWN0aW9uL2NvbnRyYWN0LnB5OjUKICAgIC8vIGNsYXNzIEF1Y3Rpb24oQVJDNENvbnRyYWN0KToKICAgIHR4biBPbkNvbXBsZXRpb24KICAgICEKICAgIGFzc2VydCAvLyByZWplY3QgdHJhbnNhY3Rpb24KICAgIHR4biBBcHBsaWNhdGlvbklECiAgICAhCiAgICBhc3NlcnQgLy8gaXMgY3JlYXRpbmcKICAgIGludCAxCiAgICByZXR1cm4KCgovLyBzbWFydF9jb250cmFjdHMuYXVjdGlvbi5jb250cmFjdC5BdWN0aW9uLmhlbGxvKG5hbWU6IGJ5dGVzKSAtPiBieXRlczoKaGVsbG86CiAgICAvLyBwcm9qZWN0cy9hdWN0aW9uL3NtYXJ0X2NvbnRyYWN0cy9hdWN0aW9uL2NvbnRyYWN0LnB5OjYtNwogICAgLy8gQGFiaW1ldGhvZCgpCiAgICAvLyBkZWYgaGVsbG8oc2VsZiwgbmFtZTogU3RyaW5nKSAtPiBTdHJpbmc6CiAgICBwcm90byAxIDEKICAgIC8vIHByb2plY3RzL2F1Y3Rpb24vc21hcnRfY29udHJhY3RzL2F1Y3Rpb24vY29udHJhY3QucHk6OAogICAgLy8gcmV0dXJuICJIZWxsbywgIiArIG5hbWUKICAgIGJ5dGUgIkhlbGxvLCAiCiAgICBmcmFtZV9kaWcgLTEKICAgIGNvbmNhdAogICAgcmV0c3ViCg==",
+    "clear": "I3ByYWdtYSB2ZXJzaW9uIDEwCgpzbWFydF9jb250cmFjdHMuYXVjdGlvbi5jb250cmFjdC5BdWN0aW9uLmNsZWFyX3N0YXRlX3Byb2dyYW06CiAgICAvLyBwcm9qZWN0cy9hdWN0aW9uL3NtYXJ0X2NvbnRyYWN0cy9hdWN0aW9uL2NvbnRyYWN0LnB5OjUKICAgIC8vIGNsYXNzIEF1Y3Rpb24oQVJDNENvbnRyYWN0KToKICAgIGludCAxCiAgICByZXR1cm4K"
+  },
+  "state": {
+    "global": {
+      "num_byte_slices": 1,
+      "num_uints": 4
+    },
+    "local": {
+      "num_byte_slices": 0,
+      "num_uints": 1
+    }
+  },
+  "schema": {
+    "global": {
+      "declared": {
+        "asa": {
+          "type": "uint64",
+          "key": "asa"
+        },
+        "asa_amount": {
+          "type": "uint64",
+          "key": "asa_amount"
+        },
+        "auction_end": {
+          "type": "uint64",
+          "key": "auction_end"
+        },
+        "auction_start": {
+          "type": "uint64",
+          "key": "auction_start"
+        },
+        "previous_bidder": {
+          "type": "bytes",
+          "key": "previous_bidder"
+        }
+      },
+      "reserved": {}
+    },
+    "local": {
+      "declared": {
+        "claimable_amount": {
+          "type": "uint64",
+          "key": "claim",
+          "descr": "The claimable amount"
+        }
+      },
+      "reserved": {}
+    }
+  },
+  "contract": {
+    "name": "Auction",
+    "methods": [
+      {
+        "name": "hello",
+        "args": [
+          {
+            "type": "string",
+            "name": "name"
+          }
+        ],
+        "readonly": false,
+        "returns": {
+          "type": "string"
+        }
+      }
+    ],
+    "networks": {}
+  },
+  "bare_call_config": {
+    "no_op": "CREATE"
+  }
+}

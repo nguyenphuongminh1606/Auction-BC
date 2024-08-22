@@ -1,0 +1,65 @@
+#pragma version 10
+
+smart_contracts.auction.contract.Auction.approval_program:
+    // smart_contracts/auction/contract.py:5
+    // class Auction(ARC4Contract):
+    txn NumAppArgs
+    bz main_bare_routing@5
+    method "hello(string)string"
+    txna ApplicationArgs 0
+    match main_hello_route@2
+    err // reject transaction
+
+main_hello_route@2:
+    // smart_contracts/auction/contract.py:6
+    // @abimethod()
+    txn OnCompletion
+    !
+    assert // OnCompletion is NoOp
+    txn ApplicationID
+    assert // is not creating
+    // smart_contracts/auction/contract.py:5
+    // class Auction(ARC4Contract):
+    txna ApplicationArgs 1
+    extract 2 0
+    // smart_contracts/auction/contract.py:6
+    // @abimethod()
+    callsub hello
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    byte 0x151f7c75
+    swap
+    concat
+    log
+    int 1
+    return
+
+main_bare_routing@5:
+    // smart_contracts/auction/contract.py:5
+    // class Auction(ARC4Contract):
+    txn OnCompletion
+    !
+    assert // reject transaction
+    txn ApplicationID
+    !
+    assert // is creating
+    int 1
+    return
+
+
+// smart_contracts.auction.contract.Auction.hello(name: bytes) -> bytes:
+hello:
+    // smart_contracts/auction/contract.py:6-7
+    // @abimethod()
+    // def hello(self, name: String) -> String:
+    proto 1 1
+    // smart_contracts/auction/contract.py:8
+    // return "Hello, " + name
+    byte "Hello, "
+    frame_dig -1
+    concat
+    retsub
